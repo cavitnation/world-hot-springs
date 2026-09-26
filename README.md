@@ -23,6 +23,14 @@ World Hot Springs is a global directory built on a Wikidata + Wikimedia Commons 
 
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white) ![Wikidata](https://img.shields.io/badge/Wikidata-006699?style=flat&logo=wikidata&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white) ![SEO](https://img.shields.io/badge/SEO-1a7f37?style=flat)
 
+## Data flow and quality boundary
+
+The documented pipeline combines Wikidata location/fact records with Wikimedia Commons imagery, then presents directory pages. Stable source identifiers, coordinates and image attribution should travel with normalized records so corrections remain traceable.
+
+The thin-content guard is intended to exclude low-value pages from search indexing. Its thresholds and coverage are not demonstrated by public implementation. Useful verification fixtures include a well-sourced location, a location missing imagery, conflicting coordinates and an incomplete record; each should have an explicit expected indexing decision.
+
+This is a documentation-only case study. No dataset completeness, image-rights audit or search-ranking result is claimed by the repository.
+
 ## About this repository
 
 This is a **case study** of a production project I designed, built and maintain. The application is live at **[worldhotsprings.com](https://worldhotsprings.com/)**. The source code is proprietary and kept private — this page documents the work and the engineering behind it.
